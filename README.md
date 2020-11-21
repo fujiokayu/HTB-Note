@@ -12,3 +12,11 @@ cd /cdrom1
 sudo ./VBoxLinuxAdditions.run 
 reboot
 ```
+
+### Open VPN
+
+- Download ovpn file **for VIP account**
+
+```Shell
+sudo openvpn --config ./Desktop/yufujioka.ovpn
+```
