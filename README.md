@@ -20,3 +20,9 @@ reboot
 ```Shell
 sudo openvpn --config ./Desktop/yufujioka.ovpn
 ```
+
+## CheatShhet
+
+### MSFvenom
+
+- [MSFvenom ~ ペイロード早見表 ~](https://qiita.com/mr-wacker/items/0ec926951ffa5a4d197c)
