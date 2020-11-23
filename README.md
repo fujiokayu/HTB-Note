@@ -61,6 +61,10 @@ find / -perm -u=s -type f 2>/dev/null
 
 ### PowerShell
 
+- whoami
+```
+$env:UserName
+```
 - 論理ドライブの一覧を表示
 ```
 Get-PSDrive
