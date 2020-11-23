@@ -69,3 +69,7 @@ $env:UserName
 ```
 Get-PSDrive
 ```
+- カレントドライブの移動
+```
+Set-Location C:
+```
