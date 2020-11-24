@@ -21,7 +21,7 @@ reboot
 sudo openvpn --config ./Desktop/yufujioka.ovpn
 ```
 
-## CheatShhet
+## CheatSheet
 
 ### MSFvenom
 
