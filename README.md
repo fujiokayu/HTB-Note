@@ -31,10 +31,17 @@ sudo openvpn --config ./Desktop/yufujioka.ovpn
 
 - Gobuster options
   - [Gobuster Cheatsheet](https://redteamtutorials.com/2018/11/19/gobuster-cheatsheet/)
-- quick play
+  - quick play
 ```
-gobuster dir -t 100 -u http://url -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o outfile
+gobuster dir -t 100 -u targetUrl -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o outfile
 ```
+
+- [ffuf](https://github.com/ffuf/ffuf)
+  - quick play
+```
+ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u targetUrl/FUZZ
+```
+
 
 ### Reverse Shell
 
