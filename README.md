@@ -95,3 +95,7 @@ Get-PSDrive
 ```
 Set-Location C:
 ```
+
+### Password Crack
+
+- [Free Password Hash Cracker](https://crackstation.net/)
