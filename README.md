@@ -23,6 +23,34 @@ sudo openvpn --config ./Desktop/yufujioka.ovpn
 
 ## CheatSheet
 
+### nmap
+
+- バージョン検出
+```shell
+nmap -sV rhost
+```
+- OS検出
+```shell
+nmap -O rhost
+```
+- OS 検出 + バージョン検出
+```shell
+nmap -A rhost
+```
+- ping 送らない
+```shell
+nmap -Pn rhost
+```
+
+#### nmap script engine
+
+- Vulnerability 検出
+```shell
+nmap --script=vuln -p rport1,rport2 rhost
+```
+
+- DNS
+
 ### MSFvenom
 
 - [MSFvenom ~ ペイロード早見表 ~](https://qiita.com/mr-wacker/items/0ec926951ffa5a4d197c)
