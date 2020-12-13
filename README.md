@@ -129,6 +129,11 @@ python3 -c "import pty; pty.spawn('/bin/bash')"
 find / -perm -u=s -type f 2>/dev/null
 ```
 
+#### [privilege-escalation-awesome-scripts-suite](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite)
+
+- [LinPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS)
+- [winPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS)
+
 ### PowerShell
 
 - whoami
