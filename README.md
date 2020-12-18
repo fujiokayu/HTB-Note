@@ -76,6 +76,7 @@ nmap --script=vuln -p rport1,rport2 rhost
 
 ### Directory Enumlation
 
+- dirb url -w
 - Gobuster options
   - [Gobuster Cheatsheet](https://redteamtutorials.com/2018/11/19/gobuster-cheatsheet/)
   - quick play
